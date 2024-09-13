@@ -1,31 +1,36 @@
-var Quotes=["Wise sayings often fall on barren ground, but a kind word is never thrown away. ...",
-        "For beautiful eyes, look for the good in others; for beautiful lips, speak only words of kindness; and for poise, walk with the knowledge that you are never alone.",
-        "Start with what is right rather than what is acceptable", 
-        "Believe you can, and you're halfway there.",
-        "The only way to do great work is to love what you do.",
-        "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-        "Your time is limited, don't waste it living someone else's life." ,
-        "The only limit to our realization of tomorrow will be our doubts of today.",
+var quotes = [
+    "Believe you can, and you're halfway there.",
+    "The only way to do great work is to love what you do.",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "Your time is limited, don't waste it living someone else's life.",
+    "The only way to achieve the impossible is to believe it is possible.",
+    "It always seems impossible until it's done.",
+    "Success is stumbling from failure to failure with no loss of enthusiasm.",
+    "Success usually comes to those who are too busy to be looking for it.",
+    "Do not wait to strike till the iron is hot, but make it hot by striking.",
+    "For beautiful eyes, look for the good in others; for beautiful lips, speak only words of kindness.",
+    "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+    "The future belongs to those who believe in the beauty of their dreams."
+];
 
-        "The future belongs to those who believe in the beauty of their dreams.",
+var poems = [
+    "The woods are lovely, dark and deep, But I have promises to keep, And miles to go before I sleep.",
+    "Hold fast to dreams, For if dreams die, Life is a broken-winged bird That cannot fly.",
+    "I wandered lonely as a cloud, That floats on high o'er vales and hills, When all at once I saw a crowd, A host, of golden daffodils.",
+    "Two roads diverged in a yellow wood, And sorry I could not travel both, And be one traveler, long I stood, And looked down one as far as I could.",
+    "Out of the night that covers me, Black as the pit from pole to pole, I thank whatever gods may be, For my unconquerable soul.",
+    "I celebrate myself, and sing myself, And what I assume you shall assume, For every atom belonging to me as good belongs to you.",
+    "A thing of beauty is a joy forever: Its loveliness increases; it will never pass into nothingness.",
+    "If you can keep your head when all about you are losing theirs and blaming it on you...",
+    "Do not go gentle into that good night, Old age should burn and rave at close of day; Rage, rage against the dying of the light."
+];
 
-        "Don't watch the clock; do what it does. Keep going.",
+function randomQuote() {
+    var quote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById("quoteText").innerHTML = quote;
+}
 
-        "The only way to achieve the impossible is to believe it is possible.",
-
-        "It always seems impossible until it's done.",
-
-        "Success is stumbling from failure to failure with no loss of enthusiasm.",
-
-        "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
-
-        "The only person you are destined to become is the person you decide to be.",
-
-        "Success usually comes to those who are too busy to be looking for it.",
-
-        "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
-        "Do not wait to strike till the iron is hot, but make it hot by striking."];
-
-        function randomFunction(){
-         document.getElementById("demo").innerHTML =  Quotes [Math.floor(Math.random() *  Quotes.length)];
-        } 
+function randomPoem() {
+    var poem = poems[Math.floor(Math.random() * poems.length)];
+    document.getElementById("quoteText").innerHTML = poem;
+}
